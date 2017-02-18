@@ -1,0 +1,5 @@
+cmake_minimum_required (VERSION 2.6)
+project (MyProject)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -mf16c -std=c++11")
+include_directories(include/)
+add_library(float_conv STATIC float_conv.cpp)
